@@ -26,12 +26,6 @@ footer {
 h1 {
     padding-top: 10%;
 }
-.circle1 {
-    height: 50px;
-    width: 50px;
-    background-color: rgba(247, 136, 167, 0.6);
-    border-radius: 80%;
-    float: right;
 }
 #circle1 {
     width: 175px;
