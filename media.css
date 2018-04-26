@@ -1,7 +1,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
 }
-.navigation {
+nav {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -55,12 +55,13 @@ p {
     color: #000;
     height: 400px;
     width: 50%;
+    position: relative;
 }
 
 #circle1 {
     position: absolute;
-    top: 130px;
-    right: 10px;
+    top: 90px;
+    left: 100px;
     height: 175px;
     width: 175px;
     z-index: 1;
@@ -70,8 +71,8 @@ p {
   
 #circle2 {
     position: absolute;
-    top: 280px;
-    right: 435px;
+    top: 188px;
+    right: 330px;
     height: 110px;
     width: 110px;
     z-index: 3;
@@ -81,25 +82,37 @@ p {
   
 #circle3 {
     position: absolute;
-    top: 220px;
-    right: 430px;
+    top: 120px;
+    right: 320px;
     height: 85px;
     width: 85px;
     z-index: 2;
     background-color: rgba(207, 130, 213, 0.6);
     border-radius: 50%;
 }
-@media only screen and (max-width: 768px) {
-    .rightDiv {
-        display: none;
-}
-}
+
 @media only screen and (min-width: 600px) {
-    .navigation {
+    nav {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0; 
+}
+    button {
+    width: 100px;
+    padding: 5px 0px;
+    margin: 0;
+}
+    footer {
+    display: flex;
+}
+    .links {
+        display: flex;
         flex-direction: row;
     }
-    footer {
-            width: 20px;
-            align-items: center;
-    }
+}
+
+@media only screen and (max-width: 768px) {
+    .rightDiv {
+    display: none;
+}
 }
